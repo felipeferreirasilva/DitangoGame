@@ -1,16 +1,24 @@
 <% include partials/header %>
+<% include partials/nav %>
     
-<div class="questionInfo">
-    <h1 id="questionTitle"></h1>
-    <table class="questionOptions">
-        <tr id="questionImage"></tr>
-        <tr id="questionOption"></tr>
-    </table>
+<div class="container">
+    <div class="row"><p class="h3 text-center" id="questionTitle"></p></div>
+    <div class="row" id="question">
+        <div class="col-sm-6 table">
+            <img src="" id="questionImage" class="img-thumbnail rounded">
+            <div class="row">
+                <button type="button" class="btn btn-danger pull-center " id="questionText"></button>
+            </div>
+        </div>
+    </div>
+    
     <button id="nextBtn" class="nextBtn" hidden><img src="images/nextBtn.png"></button>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<% include partials/scripts %>
+
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 <script src="scripts/game.js"></script>
+<script src="scripts/tts.js"></script>
     
 <% include partials/footer %>
