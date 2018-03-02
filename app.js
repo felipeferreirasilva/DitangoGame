@@ -33,7 +33,6 @@ var Question = mongoose.model('question',{
 })
 
 app.set('view engine', 'ejs');
-
 app.use(express.static('public'));
 
 app.get('/', function(req, res){
@@ -46,7 +45,6 @@ app.get('/game', function(req, res){
 
 app.get('/services/:service', function(req, res){
     var service = req.params.service;
-    
     if(service === 'getQuestions'){
         Question.find({}, function(err, data){
             res.send(data);
