@@ -29,7 +29,7 @@ function prepareQuestion(){
     var newQuestionContent = "";
     questionTitle.textContent = questions[questionNumber].title;
     questions[questionNumber].options.forEach(function(question){
-        questionImage.setAttribute('src', ('images/' + question.img));
+        questionImage.setAttribute('src', ('images/upload/' + question.img));
         questionText.textContent = question.text;
         newQuestionContent += questionContent.innerHTML;
     });     
@@ -63,7 +63,7 @@ function prepareNextQuestion(){
         questionNumber--; 
         questionTitle.textContent = questions[questionNumber].title;
         document.querySelectorAll('#questionImage').forEach(function(image, i){
-            image.setAttribute('src', 'images/' + questions[questionNumber].options[i].img);
+            image.setAttribute('src', 'images/upload/' + questions[questionNumber].options[i].img);
         });
         document.querySelectorAll('#questionText').forEach(function(button, i){
             button.textContent = questions[questionNumber].options[i].text;

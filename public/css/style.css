@@ -1,6 +1,11 @@
-.container{
-    width: 60%;
+#game-container{
+    width: 70%;
     margin-top: 1%;
+}
+
+#newquestion-container{
+    width: 70%;
+    margin-top: 2%;
 }
 
 .row button{
