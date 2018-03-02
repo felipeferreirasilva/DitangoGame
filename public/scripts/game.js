@@ -1,3 +1,7 @@
+window.onload = function(){
+    $('.loader').hide();
+};
+
 var url = 'http://localhost:3000/services/';
 
 var questionTitle = document.querySelector('#questionTitle');
@@ -75,6 +79,7 @@ function prepareNextQuestion(){
     }else{
         // FIM DE JOGO;
     }
+    
 }
 
 setQuestionData();
