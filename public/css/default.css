@@ -1,15 +1,16 @@
-#game-container{
-    width: 70%;
-    margin-top: 1%;
+
+body{
+    font-family: 'Varela Round', sans-serif;
 }
 
-#newquestion-container{
+#game-container{
     width: 70%;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .row button{
-    margin: 2% auto;
+    margin: 1% auto;
     width: 90%;
     min-height: 65px;
     white-space: normal;
@@ -28,7 +29,9 @@
 }
 
 .bg-light {
+    margin-top: 0.5%;
     background-color: white!important;
+    border-bottom: 1px dashed #f0f0f0;
 }
 
 .logo{
@@ -43,5 +46,4 @@
     height: 100%;
     z-index: 9999;
     background: url('/images/loading.gif') 50% 50% no-repeat rgba(249, 249, 249, 0.822);
-    /* visibility: hidden; */
-}
+}  
